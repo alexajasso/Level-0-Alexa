@@ -39,14 +39,14 @@ public class Quizgame {
 		}
 		
 		answer = JOptionPane.showInputDialog(
-				"five question,what species do turtles fall under");
+				"fith question,whatyes species do turtles fall under");
 		if (answer.equals("reptiles")){
 		JOptionPane.showMessageDialog(null, "correct");
 		score++;
 		}
 		
 		answer = JOptionPane.showInputDialog(
-				"sixth questions, what are 2 different types of food to snapping turtles eat");
+				"sixth question, what are 2 different types of food to snapping turtles eat");
 		if (answer.equals("watermwlon shells and lettuce")){
 		JOptionPane.showMessageDialog(null, "correct");
 		score++;
