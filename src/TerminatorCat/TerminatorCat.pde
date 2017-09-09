@@ -1,12 +1,24 @@
+int X=335;
+int Y=165;
 void setup() {
-  size(500, 500);
+  size(600, 400);
   PImage catPic = loadImage("viciousCat.jpg");
-  catPic.resize(500, 500);  // to match your size
+  catPic.resize(600, 400);  // to match your size
   background(catPic);
 }
 
 void draw() {
-  ellipse(200, 200, 20, 20);
+  ellipse(335, 165, 20, 20);
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }  
 
 
