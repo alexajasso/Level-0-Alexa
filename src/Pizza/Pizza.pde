@@ -9,16 +9,16 @@ void setup() {
 }
 
 void draw() {
-
   PImage cheese = loadImage("cheese .jpg"); 
   image(cheese, 20, 20);
   cheese.resize(10, 10);
   PImage pepperoni = loadImage("pepperoni.jpg"); 
   image(pepperoni, 20, 70);
   pepperoni.resize(10, 10);
+
   if (mousePressed) {
-    image(pepperoni, mouseX,mouseY);
-    image(cheese, mouseX,mouseY);
+
+    image( pepperoni, mouseX,mouseY);
   }
 }
 
