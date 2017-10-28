@@ -9,7 +9,7 @@ String socialsecuritynumber=JOptionPane.showInputDialog("can i get your last fou
 String birthday=JOptionPane.showInputDialog("when is your birthday");
 String phonenumber=JOptionPane.showInputDialog("can i get your phone number");
 String kaisercard=JOptionPane.showInputDialog("can i get your kaiser card");
-JOptionPane.showMessageDialog(null,"im going to clarify your information"+ "Your name: " name+ "Your adress:" adress+ socialsecuritynumber+ birthday+ phonenumber+ kaisercard);
+JOptionPane.showMessageDialog(null,"im going to clarify your information"+ "Your name: " + "Your adress:"+ adress+ socialsecuritynumber+ birthday+ phonenumber+ kaisercard);
 
 
 
