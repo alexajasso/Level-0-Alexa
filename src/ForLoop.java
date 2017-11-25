@@ -1,4 +1,4 @@
-// create a for loop class
+ // create a for loop class
 // using a for loop, print numbers 1-10
 // using a for loop, print numbers 75-50
 
