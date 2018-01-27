@@ -6,60 +6,65 @@ public class ObedientRobot {
 	static Robot flash = new Robot();
 
 	public static void main(String[] args) {
-		
+		flash.setSpeed(10);
+		int colorR = 0;
+		int colorG = 0;
+		int colorB = 0;
+		String color = JOptionPane.showInputDialog(null, "What color do you want red, orange, or yellow ?");
+		String shape = JOptionPane.showInputDialog(null, "What shape do you want circle, triangle, or square?");
 
-		String shape = JOptionPane.showInputDialog(null, "What shape do you want?");
-		if (shape.equalsIgnoreCase("Square")) {
-			drawSquare();
+		if (color.equalsIgnoreCase("Red")) {
+			colorR = 255;
+			colorG = 0;
+			colorB = 0;
+		} else if (color.equalsIgnoreCase("orange")) {
+			colorR = 255;
+			colorG = 165;
+			colorB = 0;
+		} else {
+			colorR = 255;
+			colorG = 215;
+			colorB = 0;
 		}
 
-		else if (shape.equalsIgnoreCase("Triangle")) {
-			drawTriangle();
+		if (shape.equalsIgnoreCase("Square")) {
+			drawSquare(colorR, colorG, colorB);
+		} else if (shape.equalsIgnoreCase("Triangle")) {
+			drawTriangle(colorR, colorG, colorB);
 
 		} else {
-			drawCircle();
-			String color = JOptionPane,showInputDialog(null, "what color do you want ?");
-			
-			
-			
-			
+			drawCircle(colorR, colorG, colorB);
 		}
 	}
 
-	private static void drawSquare() {
-		flash.setPenColor(255, 0, 0);
+	private static void drawSquare(int r, int g, int b) {
+		flash.setPenColor(r, g, b);
 		flash.penDown();
-		flash.setSpeed(100);
-		flash.move(90);
-		flash.turn(90);
-		flash.move(90);
-		flash.turn(90);
-		flash.move(90);
-		flash.turn(90);
-		flash.move(90);
-		flash.turn(90);
+		for (int i = 0; i < 4; i++) {
+			flash.move(90);
+			flash.turn(90);	
+		}
 		flash.sparkle();
 	}
 
-	private static void drawTriangle() {
-		flash.setPenColor(255, 165, 0);
+	private static void drawTriangle(int r, int g, int b) {
+		flash.setPenColor(r, g, b);
 		flash.penUp();
 		flash.turn(-90);
 		flash.move(90);
 		flash.penDown();
-		flash.setSpeed(100);
 		for (int i = 0; i < 3; i++) {
 			flash.move(120);
 			flash.turn(120);
-			flash.sparkle();
 		}
+			flash.sparkle();
+			
 
 	}
 
-	private static void drawCircle() {
-		flash.setPenColor(255, 215, 0);
+	private static void drawCircle(int r, int g, int b) {
+		flash.setPenColor(r, g, b);
 		flash.penDown();
-		flash.setSpeed(100);
 		for (int i = 0; i < 36; i++) {
 			flash.move(10);
 			flash.turn(10);
