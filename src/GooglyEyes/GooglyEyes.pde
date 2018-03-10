@@ -1,18 +1,23 @@
 void setup() {
   size(650, 650);
   background(0, 0, 0);
+PImage face = loadImage("face1.jpg");
+image(face, 0, 0);
+
+
+
 }
 
 
 
 void draw() {
   fill(255, 255, 255);
-  ellipse(200, 200, 200, 100);
-  ellipse(500, 200, 200, 100);
+  ellipse(200, 300, 75, 40);
+  ellipse(400, 300, 75, 40);
   fill(0, 0, 0 );
-  if (mouseX>100 && mouseX<400 && mouseY>150 && mouseY<300) {
+  if (mouseX>150 && mouseX<275 && mouseY>300 && mouseY<375) {
 
-    ellipse(mouseX, mouseY, 50, 50 );
-    ellipse(mouseX+300, mouseY, 50, 50 );
+    ellipse(mouseX, mouseY, 30, 30 );
+    ellipse(mouseX+200, mouseY, 30, 30 ))
   }
 }
