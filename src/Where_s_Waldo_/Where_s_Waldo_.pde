@@ -8,7 +8,7 @@ int rightX=318;
 int topY=358;
 int bottomY=400;
 void setup() {
-  PImage waldo = loadImage("Where_s_Waldo_"); // 5. Change this to match your file name.
+  PImage waldo = loadImage("waldo.jpg"); // 5. Change this to match your file name.
   size(500, 500);
   image(waldo, 0, 0);
   doh = minim.loadSample("/Users/League/Google Drive/league-sounds/homer-doh.wav");
@@ -24,7 +24,7 @@ void draw() {
 
   // 8. If Waldo is found, also use the method below to play “Woohoo”
   // Change the name of the sound file if you need to
-  if(mouseX<leftX && mouseX>rightX && mouseY<topY && mouseY> bottomY ){
+  if(mouseX>leftX && mouseX<rightX && mouseY>topY && mouseY<bottomY ){
     playWoohoo();
   // 9. If the mouse is pressed and they’re not on Waldo, play “Doh”
   // Change the name of the sound file if you need to
