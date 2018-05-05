@@ -10,11 +10,23 @@ public class PrimeorNot {
 		}
 		if (finalNumber % 2 == 0) {
 			JOptionPane.showMessageDialog(null, "Your number is not prime");
-		}
-	for(int i=3; i<finalNumber; i++) {
-		// if(finalNumber % i)
-			//print if prime or not
-	}
-	}
+		} else {
+			boolean isPrime = true;
 
+			for (int i = 3; i < finalNumber; i++) {
+				if (finalNumber % i == 0) {
+					isPrime = false;
+				}
+
+			}
+			if (isPrime == false) {
+				JOptionPane.showMessageDialog(null, "Number is not PRIME !!!");
+
+			} else {
+				if (isPrime == true) {
+					JOptionPane.showMessageDialog(null, "Number is PRIME !!!");
+				}
+			}
+		}
+	}
 }
