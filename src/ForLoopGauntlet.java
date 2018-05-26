@@ -21,13 +21,33 @@ public class ForLoopGauntlet {
 		// System.out.println(i);
 
 		// Display all multiples of 7 from 0 to 777
-		//for (int i = 7; i <= 777; i = i + 7) {
-			//System.out.println(i);
+		// for (int i = 7; i <= 777; i = i + 7) {
+		// System.out.println(i);
+
+		// Display years you were alive
+		//for (int i = 2006; i <= 2018; i++) {
+			//int age = i - 2006;
+			//System.out.println("In " + i + " I was " + age + " years old");
+		
+		for(int i = 0; i <= 2; i++ ) {
+			for(int j = 0 ; j<=2; j++) {
+				System.out.println( i+ " "+j);
+			}
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		//}
 
-	//}
+		// }
+	}
 
-	
 	{
 
 	}
