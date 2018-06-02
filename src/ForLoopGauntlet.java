@@ -29,11 +29,17 @@ public class ForLoopGauntlet {
 			//int age = i - 2006;
 			//System.out.println("In " + i + " I was " + age + " years old");
 		
-		for(int i = 0; i <= 2; i++ ) {
-			for(int j = 0 ; j<=2; j++) {
-				System.out.println( i+ " "+j);
-			}
-		}
+		//for(int i = 0; i <= 2; i++ ) {
+		//	for(int j = 0 ; j<=2; j++) {
+		//		System.out.println( i+ " "+j);
+			//}
+		//}
+	//for(int i= 0; i<=6; i+=3){
+		//for(int j= 1; j<=3 ;j++){
+		//	System.out.print(i+j +" ");
+		//}
+		//System.out.println("");
+	//}
 		
 		
 		
