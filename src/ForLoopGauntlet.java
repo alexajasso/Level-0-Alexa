@@ -25,33 +25,40 @@ public class ForLoopGauntlet {
 		// System.out.println(i);
 
 		// Display years you were alive
-		//for (int i = 2006; i <= 2018; i++) {
-			//int age = i - 2006;
-			//System.out.println("In " + i + " I was " + age + " years old");
-		
-		//for(int i = 0; i <= 2; i++ ) {
-		//	for(int j = 0 ; j<=2; j++) {
-		//		System.out.println( i+ " "+j);
-			//}
-		//}
-	//for(int i= 0; i<=6; i+=3){
-		//for(int j= 1; j<=3 ;j++){
-		//	System.out.print(i+j +" ");
-		//}
-		//System.out.println("");
-	//}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//}
+		// for (int i = 2006; i <= 2018; i++) {
+		// int age = i - 2006;
+		// System.out.println("In " + i + " I was " + age + " years old");
+
+		// for(int i = 0; i <= 2; i++ ) {
+		// for(int j = 0 ; j<=2; j++) {
+		// System.out.println( i+ " "+j);
+		// }
+		// }
+		// for(int i= 0; i<=6; i+=3){
+		// for(int j= 1; j<=3 ;j++){
+		// System.out.print(i+j +" ");
+		// }
+		// System.out.println("");
+		// }
+
+		// for (int i = 0; i <= 90; i += 10) {
+		// for (int j = 1; j <= 10; j += 1) {
+		// System.out.print(i + j + " ");
+		// }
+		// System.out.println("");
+		// }
 
 		// }
+
+		// }
+
+		for (int i = 0; i <= 5; i += 1) {
+			for (int j = 1; j <= i + 1; j += 1) {
+				System.out.print(" * ");
+			}
+			System.out.println(i + 1);
+		}
+
 	}
 
 	{
