@@ -12,11 +12,15 @@ void setup() {
 
 
 void draw() {
-  if (mousePressed){
-  System.out.println(mouseY);
-  }  image(creeper, x, y);
-  if (mousePressed && mouseX<=53 && mouseX>=47 && mouseY<=56 && mouseY>=52)
-  //{System.out.println(Good Job!!!You found the Creeper!!!);
+  PImage minecraft = loadImage("minecraft.jpg");    
+  minecraft.resize(1750, 1166);          
+  background(minecraft);         
+  if (mousePressed) {
+    System.out.println(mouseY);
+  }  
+  image(creeper, x, y);
+  if (mousePressed && mouseX<=53 && mouseX>=47 && mouseY<=56 && mouseY>=52) {
+    System.out.println("Good Job!!!You found the Creeper!!!");
     fill(0, 255, 0);
     ellipse(mouseX, mouseY, 20, 20);
   } else if (mousePressed) {
@@ -25,8 +29,8 @@ void draw() {
   }
 }
 boolean isNear(int a, int b) {
-if (abs(a - b) < 10)
-     return true;
-else
-     return false;
+  if (abs(a - b) < 10)
+    return true;
+  else
+    return false;
 }
