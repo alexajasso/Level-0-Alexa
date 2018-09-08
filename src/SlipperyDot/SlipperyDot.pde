@@ -15,7 +15,7 @@ void draw() {
   if (mousePressed) {
 
     int distance=getDistance(x, y, mouseX, mouseY);
-    System.out.println(distance);
+   // System.out.println(distance);
     int halfDistance=size/2;
     if (distance >-halfDistance && distance < halfDistance) {
       x = int (random(400));
