@@ -5,6 +5,7 @@ public class RobotGraffitit {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		flash.setPenWidth(50);
 		flash.setPenColor(66, 244, 197);
 		flash.setSpeed(20);
 		flash.penDown();
@@ -15,8 +16,15 @@ public class RobotGraffitit {
 		}
 
 		flash.penUp();
-		//flash.move();
-
+		flash.turn(60);
+		flash.move(50);
+		flash.turn(-50);
+		flash.penDown();
+		flash.move(60);
+		flash.penUp();
+		flash.move(90);
+		flash.turn(80);
+		flash.sparkle();
 	}
 
 }
