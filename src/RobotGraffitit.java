@@ -5,6 +5,7 @@ public class RobotGraffitit {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		flash.sparkle();
 		flash.setPenWidth(50);
 		flash.setPenColor(66, 244, 197);
 		flash.setSpeed(20);
