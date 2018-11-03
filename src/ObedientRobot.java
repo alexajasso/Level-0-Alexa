@@ -6,6 +6,7 @@ public class ObedientRobot {
 	static Robot flash = new Robot();
 
 	public static void main(String[] args) {
+		
 		flash.setSpeed(10);
 		int colorR = 0;
 		int colorG = 0;
@@ -38,9 +39,11 @@ public class ObedientRobot {
 	}
 
 	private static void drawSquare(int r, int g, int b) {
+		flash.setPenWidth(50);
 		flash.setPenColor(r, g, b);
 		flash.penDown();
 		for (int i = 0; i < 4; i++) {
+			
 			flash.move(90);
 			flash.turn(90);	
 		}
@@ -48,6 +51,7 @@ public class ObedientRobot {
 	}
 
 	private static void drawTriangle(int r, int g, int b) {
+		flash.setPenWidth(50);
 		flash.setPenColor(r, g, b);
 		flash.penUp();
 		flash.turn(-90);
@@ -63,6 +67,7 @@ public class ObedientRobot {
 	}
 
 	private static void drawCircle(int r, int g, int b) {
+		flash.setPenWidth(50);
 		flash.setPenColor(r, g, b);
 		flash.penDown();
 		for (int i = 0; i < 36; i++) {
