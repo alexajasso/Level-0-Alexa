@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+mport javax.swing.JOptionPane;
 
 public class Greeter2 {
 
