@@ -8,7 +8,7 @@ public class ForLoop {
 		for (int i = 1; i <= 10; i++) {
 			System.out.println(i);
 		}
-		for (int i = 75; i >= 50; i--) {
+		for (int i = 12; i >= 0; i--) {
 			System.out.println(i);
 		}
 	}
